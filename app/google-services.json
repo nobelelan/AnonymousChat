@@ -1,20 +1,21 @@
 {
   "project_info": {
-    "project_number": "596796177599",
-    "project_id": "anonymous-chat-b6db2",
-    "storage_bucket": "anonymous-chat-b6db2.appspot.com"
+    "project_number": "568574083883",
+    "firebase_url": "https://anonymouschat-bd577-default-rtdb.firebaseio.com",
+    "project_id": "anonymouschat-bd577",
+    "storage_bucket": "anonymouschat-bd577.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:596796177599:android:96ed04653a8dee81e89a0a",
+        "mobilesdk_app_id": "1:568574083883:android:6559f963964f600e60bb6e",
         "android_client_info": {
           "package_name": "com.example.anonymuschat"
         }
       },
       "oauth_client": [
         {
-          "client_id": "596796177599-0n6qgqqfg14bc9aqrd8iogd1pqji50dk.apps.googleusercontent.com",
+          "client_id": "568574083883-8jj4parniidat2vua3rrd4i1jelq80de.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.anonymuschat",
@@ -22,20 +23,20 @@
           }
         },
         {
-          "client_id": "596796177599-cs45uur1jj7fit6aj5fg853j3v10p361.apps.googleusercontent.com",
+          "client_id": "568574083883-eu1j71vr590tps8fd4pmgikacn9ao2e2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAOrhlJIqbJwlHznEJN2BE30clQ9GHoK7s"
+          "current_key": "AIzaSyAiEBM7OQH_1yLMnn_jjOdy72n2CsKQuE0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "596796177599-cs45uur1jj7fit6aj5fg853j3v10p361.apps.googleusercontent.com",
+              "client_id": "568574083883-eu1j71vr590tps8fd4pmgikacn9ao2e2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

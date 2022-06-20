@@ -43,8 +43,9 @@ class SignInActivity : AppCompatActivity() {
                 if (task.isSuccessful){
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "createUserWithEmail:success")
-                    val user = auth.currentUser
-                    startActivity(Intent(this@SignInActivity, MainActivity::class.java))
+                    val intent = Intent(this@SignInActivity, MainActivity::class.java)
+                    finish()
+                    startActivity(intent)
 //                    updateUI(user)
                 }else{
                     // If sign in fails, display a message to the user.
@@ -54,13 +55,5 @@ class SignInActivity : AppCompatActivity() {
                 }
             }
 
-    }
-
-    override fun onStart() {
-        super.onStart()
-        val currentUser = auth.currentUser
-        if(currentUser != null){
-            startActivity(Intent(this@SignInActivity, MainActivity::class.java))
-        }
     }
 }
