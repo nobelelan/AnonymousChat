@@ -71,6 +71,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             return true
         }
+        if (item.itemId == R.id.menu_profile){
+            val intent = Intent(this@MainActivity, ProfileActivity::class.java)
+            startActivity(intent)
+        }
         return true
     }
 }

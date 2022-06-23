@@ -46,7 +46,7 @@ class SignUpActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "createUserWithEmail:success")
                     val user = auth.currentUser
-                    addUserToDatabase(auth.currentUser?.uid!!, fullName, email)
+                    addUserToDatabase(auth.currentUser?.uid!!, fullName, email, "")
                     val intent = Intent(this@SignUpActivity, MainActivity::class.java)
                     finish()
                     startActivity(intent)
@@ -60,9 +60,9 @@ class SignUpActivity : AppCompatActivity() {
             }
     }
 
-    private fun addUserToDatabase(uid: String, fullName: String, email: String) {
+    private fun addUserToDatabase(uid: String, fullName: String, email: String, imageUrl: String) {
         databaseReference = FirebaseDatabase.getInstance().getReference()
-        databaseReference.child("users").child(uid).setValue(User(uid, fullName, email))
+        databaseReference.child("users").child(uid).setValue(User(uid, fullName, email, imageUrl))
     }
 
 }
